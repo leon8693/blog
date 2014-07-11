@@ -1,0 +1,92 @@
+---
+layout: post
+title: "python class"
+date: 2014-04-25 13:55
+comments: true
+categories: python
+description: "python class"
+tags: [python,class]
+keywords: linux,python,class
+---
+
+
+
+
+
+##Class
+####1.典型类的调用方法
+```python
+#简单类的方式
+class myclass:                          #定义一个类的名称为myclass
+    "this is myclass"                   #定义一个类的说明文档
+    a=100                               #类的属性,a是成员,可以用类名直接访问
+    def __init__(self):                 #定义类初始化
+        self.name = "alex"              #定义name和age属性,并定义方法，必须由类的实例来调用
+        self.age = "23"
+
+
+print myclass.a
+A = myclass()                           #实例化类
+print A.name                            #类实例化后调用name属性
+print A.age
+
+```
+python中`self`只有在类的方法中才会有，`self`在定义类的方法时必须有，不需要传入相应参数，`self`名称也不是必须的，将上面self替换成myname或是任何其他名称也是可以的
+
+<!-- more -->
+
+####2.新类以及动态赋值
+```python
+#新类表达方式以及动态调用
+class Account(object):                  #在新建Account名字的类时添加object表示属于新类，这个在python2.2版本中引进的,3后面默认是新类
+    "一个简单的类"                      #类的说明文档
+    account_type="Basic"                #你懂的
+    def __init__(self,name,balance):    #初始化，并且设定2个属性
+        "初始化一个新的Account实例"
+        self.name=name                  #self.name,self.balance的访问方式访问成员属性
+        self.balance=balance
+    def deposit(self,amt):              #设定类中deposit函数
+        "存款"
+        self.balance=self.balance+amt   #设定deposit函数中balance属性获取方式
+    def withdraw(self,amt):
+        "取款"
+        self.balance=self.balance-amt   #设定withdraw函数中balance属性获取方式
+    def inquiry(self):                  #inquiry函数定义最后返回的balance数值
+        "返回当前余额"
+        return self.balance
+ 
+print Account.account_type
+A=Account('leon',500)                   #实例化类并且赋上默认值
+A.deposit(500)                          #函数deposit中对成员amt赋值
+A.withdraw(300)                         #函数withdraw中对成员amt赋值
+print A.name                            #调用A.name属性
+print A.balance                         #调用A.balance属性
+```
+
+
+python2.7中，必须在新建类时添加`object`方法来使这个类成为新类，不过在python3以后默认就是新类，新类和旧类相比多些新的属性。
+上面例子就是简单的条用方式和赋值方法。
+
+####3.类的class属性
+接上面的类打印class的一些属性
+```python
+B=Account.__name__                      #name属性需要实例化后才可调用
+C=Account.__base__                      #base属性需要实例化后才可调用
+print A.__doc__                         #类型帮助信息
+print B                                 #类型名称
+print A.__module__                      #类型所在模块
+print C                                 #类型所继承的基类
+print A.__dict__                        #类型字典，存储所有类型成员信息
+print A.__class__                       #类型
+```
+
+
+
+
+
+
+####小知识
+这个参数定义在开头就可以在python脚本中添加中文注释了
+```python
+# -*- coding:utf-8 -* 
+```
