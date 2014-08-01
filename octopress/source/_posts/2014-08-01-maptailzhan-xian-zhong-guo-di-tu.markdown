@@ -36,6 +36,8 @@ Omit the `-g` to install as a module.
 
 `$ tail -f nohup.out | maptail -h my.host.com -p 3000`
 
+<!-- more -->
+
 ### In your server:
 
 ```javascript
