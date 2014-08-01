@@ -11,8 +11,8 @@ keywords: maptail,chinamap,中国地图
 
 ###声明
 本篇文章转自王强blog  
-blog地址:[maptail展现中国地图](http://qiangwang.github.io/2013/01/27/maptail-china-map.html)
-github地址:[maptail-github](https://github.com/qiangwang/maptail)
+blog地址:[maptail展现中国地图](http://qiangwang.github.io/2013/01/27/maptail-china-map.html)   
+github地址:[maptail-github](https://github.com/qiangwang/maptail)   
 
 
 
