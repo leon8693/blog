@@ -78,7 +78,7 @@ maptail is MIT/X11. The rest of the components are of their respective licences.
 ##Nginx配置
 本人使用后非常好,这得感谢王强的付出和共享,随后我将这个通过nginx转发,发现通过nginx代理后页面变成静态了,这个是怎么回事?  
 原本想研究一下,但迫于工作原因,没时间仔细看,不过和同事分享的时候发现了是websocket的问题,这得感谢@朱总的提议,随后查看页面如下  
-![maptail001](/images/blog_img/maptail001.png)
+![maptail01](/images/blog_img/maptail01.png)
 
 确确实实就是websocket问题  
 接下来我们来解决它,嘿嘿  
