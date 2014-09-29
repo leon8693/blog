@@ -3,7 +3,7 @@ layout: post
 title: "python class"
 date: 2014-04-25 13:55
 comments: true
-categories: python
+categories: Python
 description: "python class"
 tags: [python,class]
 keywords: linux,python,class

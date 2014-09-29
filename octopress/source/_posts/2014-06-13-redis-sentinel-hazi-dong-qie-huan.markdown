@@ -3,7 +3,7 @@ layout: post
 title: "Redis Sentinel HA自动切换"
 date: 2014-06-13 17:11
 comments: true
-categories: database
+categories: Database
 description: "Redis Sentinel HA自动切换"
 tags: [Redis Sentinel HA自动切换]
 keywords: linux,python,OptionParser

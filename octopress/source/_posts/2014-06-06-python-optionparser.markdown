@@ -3,7 +3,7 @@ layout: post
 title: "python OptionParser"
 date: 2014-06-06 15:28
 comments: true
-categories: python
+categories: Python
 description: "python OptionParser"
 tags: [python,OptionParser]
 keywords: linux,python,OptionParser
