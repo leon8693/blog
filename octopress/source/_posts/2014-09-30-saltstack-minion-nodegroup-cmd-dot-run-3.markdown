@@ -40,6 +40,9 @@ angel01.i.fdmdns.com:
 angel02.i.fdmdns.com:
     True
 ```
+
+<!-- more -->
+
 上面展示了匹配的方式  
 test.ping 是salt默认命令,主要测试客户端存活情况   
 
